@@ -11,7 +11,7 @@ def echo_client(port):
     sock.connect(server_add)
 
     try:
-        mess="tekst will be echoed"
+        mess="tekst will be echoed NADI"
         print("sending message %s" % mess)
         sock.sendall(mess.encode('utf-8'))
         amount_rec=0

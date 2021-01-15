@@ -22,7 +22,7 @@ def echo_server(port):
         client,address=tcp_socket.accept()
         data=client.recv(data_payload)
         if data:
-            print("Data %s" %data)
+            print("Received Data %s" %data)
             client.send(data)
             print(" sent %s bytes back to %s" % (data,address))
 
